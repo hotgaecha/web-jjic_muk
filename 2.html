@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+HTML -> Hyper Text Markup Language
+여기서 말하는 Hyper Text가 아래 나오는 태그들을 의미함.
+<!-- html의 시작에는 이 문서가 html로 작성되었다를 말하는 <!DOCTYPE html>가 꼭 들어가야한다-->
+<html>
+    사실뭐 html태그는 있어도 그만 없어도 그만인듯.
+    그래도 쓰자(약속처럼)
+<body> 
+    <h1> 여기는 2.html </h1>
+    본문을 감싸는 것은 body 태그
+    원래는 head가 먼저 오는게 일반적임.(실습하다보니 이래됐다)
+<strong>Hypertext Markup Language (HTML)</strong> is the standard markup language for creating web pages and web applications.
+<u>그래 바로 이거지</u>
+
+<!-- 주석은 이렇게 쓰면 된다 -->
+<!--우리는 이걸 태그라고 부른다--> 
+
+ㅇㅇ
+
+<strong>볼드체 표시 강조의 의미</strong>
+<u>underline의 약자 밑줄표시</u>
+<h1>부터 h6까지 제목형식으로 글자 크기를 키워줌.</h1>
+<br> 이건 줄바꿈 태그  (닫을 필요 없음)
+<p>paragraph의 약자로 이건 단락을 표현하는 태그</p>
+<p> 단락을 구분한다는건 줄을 띄워줌과 비슷한 느낌이 된다.</p>
+<!-- 근데 p의 경우 단락을 구분짓는 간격이 고정되어 있어서 불편함-->
+<!-- 아래처럼 css를 사용하면 p의 단점을 극복할수 있음.-->
+
+<p style="margin-top: 45px;"> 요기 앞에 설정한 스타일이 css라고 한다. </p>
+
+<img src = "https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7648.png">
+<!-- 이미지는 이렇게 넣는다. src는 source의 약자-->
+<!-- 위에서는 웹에서 이미지 링크를 통해 나타냈고 밑에서는 같은 폴더내에 이미지를 나타내자-->
+<p style="margin-top : 45px"></p>
+<img src = "1.png"
+width="300"
+height="300">
+<!-- 크기를 조정할때 100% 처럼 비율로 조정이 가능함-->
+
+
+
+<!-- 몇가지 태그에는 부모와 자식의 관계가 존재함.-->
+<li>1. 목차를 나타내는 list의 약자 li가 있다.</li>
+<li>2. 근데 만약 목차를 그룹으로 나누고 싶다면???</li>
+
+<ul>
+    <li> 3. 그때 사용하는게 바로 Unordered List 의 약자인 ul이라는 태그다.(경계를 생성)</li>
+</ul>
+<!-- ul태그를 사용할때는 앞에 탭을 누른것처럼 몇칸 띄워진다.-->
+<ul>
+    <li> 1. 여기서 ul은 li가 없으면 아무 의미가 없기에 부모 자식의 관계</li>
+</ul>
+
+
+<!-- 근데 만약 리스트를 1억개 만들었는데 첫번째꺼를 지워야 한다면?
+순서가 자동으로 설정되게 바꿔주는 Ordered list의 약자인 ol을 써보자-->
+
+<ol>
+    <li> 여기가 몇번째야</li>
+    <li> 자동으로 번호를 붙인다는거지.</li>
+    <li> 맨앞을 지우면 두번째가 1번이 되는거야</li>
+</ol>
+<!--끝. 몇가지 태그에는 부모와 자식의 관계가 존재함.-->
+
+<!--닻 Anchor의 약자인 a는 아주아주 중요한 기능이라는 뜻. -> 링크를 나태내기 위한 태그임!
+    또한 a와 같이 쓰이는 href는 Hypertext REFerence의 약자로 참조하는 링크를 의미함.-->
+<a href="https://www.w3.org/TR/html5/"
+target="_blank"
+title="html5 speccification">
+여기서 target은 클릭시 새창에 링크의 웹페이지가 열리는 속성이다.
+title은 어떤 내용을 담고 있는지를 툴팁(마우스 올려놓으면 뜸)으로 보여줌.
+공식 문서 링크를 걸었다. (파란색으로 링크임이 표시됨)
+</a>
+
+
+</body>
+
+
+
+
+
+
+
+<head>
+    <!-- 본문에 대한 설명태그 title과 meta등등은 head에 따로 만들어준다.(정리정돈)
+    본문은 body라는 태그에 넣어줘야함.-->
+
+<title> 이거 안쓰면 파일이름이 웹페이지의 제목이 된다.</title>
+<!-- 검색엔진에 노출되기 위해선 이녀석을 잘만져야...-->
+
+
+<meta charset="utf-8">
+<!-- vscode의 아래쪽을보면 UTF-8이라는게 보인다
+우리는 웹페이지를 UTF-8방식으로 저장했다는 뜻인데, 이때 웹페이지를 열때 
+UTF-8로 열어주지 않으면 영어가 아닌 글자는 꺠질수 있음.
+따라서 이 옵션을 꼭 넣어주는 것이 좋음.-->
+
+</head>
+
+
+</html>
